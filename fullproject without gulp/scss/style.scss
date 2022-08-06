@@ -18,9 +18,6 @@ a{
 .header_big_screen_menu{
     display: flex;
     flex-direction: column;
-    position:sticky;
-    z-index: 1;
-    top:0;
 }
 .header_upper_menu{
     padding: 15px 0px;
@@ -33,10 +30,7 @@ a{
 .header{
   display: block;
   position:sticky;
-  top:0;
   width: 100%;
-  z-index: 1;
-  margin-bottom: 0 auto;
 }
 .hamburger_bar {
     width: 30px;
@@ -45,7 +39,6 @@ a{
     background-color: black;
     display: block;
   }
-  
 
 .header_big_search{
     background-image: url("../img/search-icon.png");
@@ -68,7 +61,7 @@ a{
     position: relative;
     display: inline-block;
     border-bottom: 1px solid #E9E9E9;
-    
+  
   }
   
   .dropdown-content {
@@ -87,17 +80,20 @@ a{
     justify-content: space-around;
     align-items: center;
     padding: 5px;
+    font-size: 0.7rem;
     border-bottom: 1px solid #E9E9E9;
   }
   .dropdown-link a {
     color: black;
-    font-size:1rem
+    cursor: pointer;
+
   }
   .dropdown-link a:first-of-type{
     width: 80px;
   }
     
-  .dropdown:hover .dropdown-content {display: flex;}
+  .dropdown:hover,dropdown-content {display: flex;}
+
   .dropdown-link a:first-of-type:hover{
     color: gray;
     margin-left: 0.625rem;
@@ -109,8 +105,7 @@ a{
     justify-content: center;
   }
   .main_content_container{
-    position:relative;
-    z-index: 0;
+
     align-self: center;
     display: flex;
     justify-content: center;
@@ -118,7 +113,7 @@ a{
     align-items: center;
     flex-wrap: wrap;
     max-width: 1400px;
-    margin-top: 6rem;
+    margin-top: 3rem;
   }
   .main_content_box{
 
@@ -137,7 +132,6 @@ a{
   }
   .main_content_bg_title{
     font-size: 1.5rem;
-    max-width:310px;
   }
   .main_content_descr{
     display: flex;
@@ -148,7 +142,7 @@ a{
     color: #9B9B9B;
   }
   .main_content_text_descr{
-    font-size: 0.875rem;;
+    font-size: 14px;
     color: #929292;
   }
   .header-sm-screen{
@@ -156,14 +150,13 @@ a{
     gap: 1.2rem;
     padding-left:1.25rem;
     display: none;
-    padding: 2rem;
+
   }
   .header-sm-hamburger{
     border-bottom: 1px solid #E9E9E9;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding-bottom: 1rem;
   }
   .mobile-menu-title{
     color: black;
